@@ -28,4 +28,4 @@ The intuition behind SVM approach is that if a classifier is good at the most ch
 <br/>Two main advantages are higher training speed and better performance with a small and medium datasets, such as text datasets. 
 <br/>We try other algorithms too, such as Naive Bayes, Random Forest, XGBoost and so on, but SVM gave us best results on test data.
 
-<br/><br/> <img src="https://github.com/VladimirLukovic/real-fake-tweets/blob/main/SVM_classification_report.png" width="800" height="400">
+<br/><br/> <img src="https://github.com/VladimirLukovic/real-fake-tweets/blob/main/pictures/SVM_classification_report.png" width="800" height="400">
