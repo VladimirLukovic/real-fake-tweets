@@ -8,18 +8,18 @@ Our data is slightly unbalanced, 75% of real and 25% of fake news.
 <br/> In further improvements we can collect additional data, for both fake and real.
 
 ## WordCloud
-Most common words from real as well as fake tweets you can see in hte following pictures:
+Most common words from real as well as fake tweets you can see in the following pictures:
 <br/>
 <p float="left">
   <img src="https://github.com/VladimirLukovic/real-fake-tweets/blob/main/pictures/Most common words - real.png" width="500" height="250" />
   <img src="https://github.com/VladimirLukovic/real-fake-tweets/blob/main/pictures/Most common words - fake.png" width="500" height="250" /> 
 </p>
-<br/>
+As you can see at the first sight, fake news contains much more celebrity names.
 
 ## Text preprocessing
 There are different possible techniques for preprocessing text. Some of them are: lowercase, keep only alphanumerical values, stemming words, lemmatazing words, removing stopwords and so on.
-Concretely our usecase is specific because those steps could clean important differences between fake and real tweets. For pilot version we get the best results when we apply only lowercasing.
-<br/>In future we colud definitly try to apply on some part of data the techniques above.
+Concretely our usecase is specific because those steps could remove important differences between fake and real tweets. For pilot version we get the best results when we apply only lowercasing.
+<br/>In future versions we colud definitly try to apply on some part of data the techniques above.
 
 ## Split data
 Set isn't too big, so we split them to train-test in the following percentage ratio 80%:20%. As well we stratify by target value.
@@ -33,10 +33,10 @@ This implementation produces computational and memory efficiency sparse matrix.<
 For CountVect we used word n-grams, specificly only unigrams which gave us best score. We ignore terms that appear in more than 50% of the documents and in less than 2 documents.
 
 ## Linear SVM
-For algotihm, we choose Linear Support Vector Machine. SVM is a supervised machine learning model very suitable for text classification problems.
+For algorithm, we choose Linear Support Vector Machine. SVM is a supervised machine learning model very suitable for text classification problems.
 He focuses only at the most difficult examples whereas other classifiers pay attention to all.
 The intuition behind SVM approach is that if a classifier is good at the most challenging comparisons, than classifier will be even better at the easy one.
 <br/>Two main advantages are higher training speed and better performance with a small and medium datasets, such as text datasets. 
-<br/>We try other algorithms too, such as Naive Bayes, Random Forest, XGBoost and so on, but SVM gave us best results on test data.
-
+<br/><br/>We try other algorithms too, such as Naive Bayes, Random Forest, XGBoost and so on, but SVM gave us best results on test data.
+<br/>Picture below showing classification report for SVM on train and test data.
 <br/><br/> <img src="https://github.com/VladimirLukovic/real-fake-tweets/blob/main/pictures/SVM_classification_report.png" width="600" height="300">
