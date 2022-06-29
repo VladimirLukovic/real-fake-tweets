@@ -27,3 +27,5 @@ He focuses only at the most difficult examples whereas other classifiers pay att
 The intuition behind SVM approach is that if a classifier is good at the most challenging comparisons, than classifier will be even better at the easy one.
 <br/>Two main advantages are higher training speed and better performance with a small and medium datasets, such as text datasets. 
 <br/>We try other algorithms too, such as Naive Bayes, Random Forest, XGBoost and so on, but SVM gave us best results on test data.
+
+<br/><br/> <img src="https://github.com/VladimirLukovic/real-fake-tweets/blob/main/SVM_classification_report.png" width="800" height="400">
