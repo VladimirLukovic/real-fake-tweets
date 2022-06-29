@@ -3,7 +3,18 @@ Ml model that classifies whether tweets are real or fake
 
 ## Data
 In our dataset we have around 23k binary-classified tweets (real/fake), from two different sources (GossipCop ~ 22k, PolitiFact ~ 1k) collected with [FakeNewsNet](https://github.com/KaiDMML/FakeNewsNet).
-Our data is slightly unbalanced, 75% of real and 25% of fake news.<br/> In further improvements we can collect additional data, for both fake and real.
+Our data is slightly unbalanced, 75% of real and 25% of fake news.
+<br/><br/> <img src="https://github.com/VladimirLukovic/real-fake-tweets/blob/main/pictures/Target value plot.png" width="700" height="250">
+<br/> In further improvements we can collect additional data, for both fake and real.
+
+## WordCloud
+Most common words from real as well as fake tweets you can see in hte following pictures:
+<br/>
+<p float="left">
+  <img src="https://github.com/VladimirLukovic/real-fake-tweets/blob/main/pictures/Most common words - real.png" width="500" height="250" />
+  <img src="https://github.com/VladimirLukovic/real-fake-tweets/blob/main/pictures/Most common words - fake.png" width="500" height="250" /> 
+</p>
+<br/>
 
 ## Text preprocessing
 There are different possible techniques for preprocessing text. Some of them are: lowercase, keep only alphanumerical values, stemming words, lemmatazing words, removing stopwords and so on.
@@ -28,4 +39,4 @@ The intuition behind SVM approach is that if a classifier is good at the most ch
 <br/>Two main advantages are higher training speed and better performance with a small and medium datasets, such as text datasets. 
 <br/>We try other algorithms too, such as Naive Bayes, Random Forest, XGBoost and so on, but SVM gave us best results on test data.
 
-<br/><br/> <img src="https://github.com/VladimirLukovic/real-fake-tweets/blob/main/pictures/SVM_classification_report.png" width="800" height="400">
+<br/><br/> <img src="https://github.com/VladimirLukovic/real-fake-tweets/blob/main/pictures/SVM_classification_report.png" width="600" height="300">
